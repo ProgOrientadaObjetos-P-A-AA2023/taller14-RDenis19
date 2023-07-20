@@ -73,7 +73,7 @@ public class Estudiante {
                 + "   %.2f\n"
                 + "   %.2f\n"
                 + "   %.2f\n"
-                + "   Promedio= %.2f\n",
+                + "   Promedio %.2f\n",
                 nombre,
                 apellido,
                 calificacion1,
