@@ -37,8 +37,7 @@ public class Enlace {
                     + "correo,"
                     + "sueldo , "
                     + "mesSueldo) "
-                    + "values ("
-                    + "'%s', '%s', '%s', '%.2f', '%d')",
+                    + "values ('%s', '%s', '%s', '%.2f', '%s')",
                     trabajador.obtenerCedula(),
                     trabajador.obtenerNombres(),
                     trabajador.obtenerCorreo(),
@@ -68,8 +67,7 @@ public class Enlace {
                         rs.getString("nombres"),
                         rs.getString("correo"),
                         rs.getDouble("sueldo"),
-                        rs.getInt("mesSueldo")
-                );
+                        rs.getString("mesSueldo"));
                 listaT.add(trabajador);
             }
 

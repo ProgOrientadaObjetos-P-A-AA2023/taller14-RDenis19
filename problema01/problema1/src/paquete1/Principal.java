@@ -13,7 +13,7 @@ public class Principal {
         String nombres;
         String correo;
         double sueldo;
-        int mesSueldo;
+        String mesSueldo;
         boolean bandera = true;
 
         while (bandera) {
@@ -27,9 +27,10 @@ public class Principal {
 
             System.out.println("Ingrese el sueldo del trabajador: ");
             sueldo = entrada.nextDouble();
+            entrada.nextLine();
 
             System.out.println("Ingrese el mes de sueldo del trabajador: ");
-            mesSueldo = entrada.nextInt();
+            mesSueldo = entrada.nextLine();
 
             Trabajador trabajador = new Trabajador(
                     cedula,
@@ -39,21 +40,19 @@ public class Principal {
                     mesSueldo);
             c.insertarTrabajador(trabajador);
             c.establecerListaTrabajador();
-            entrada.nextLine();
 
             System.out.println("Ingrese ´SALIR´ si desea terminar el proceso");
             String op = entrada.nextLine();
 
             if (op.equalsIgnoreCase("Salir")) {
                 bandera = false;
-                for (int i = 0; i < c.obtenerLista().size(); i++) {
+                System.out.println("-----------------------------------");
+
+                for (Trabajador tra : c.obtenerLista()) {
+                    System.out.println(tra);
                     System.out.println("-----------------------------------");
-                    System.out.printf("%s",
-                            c.obtenerLista());
-                    
 
                 }
-
             }
 
         }
