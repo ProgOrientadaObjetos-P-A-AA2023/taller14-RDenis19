@@ -68,13 +68,12 @@ public class Estudiante {
     @Override
     public String toString() {
         String cadena = String.format(""
-                + "Nombre: %s\n"
-                + "Apellido: %s\n"
-                + "Calificaciones:\n"
-                + "\tCalificacion 1: %.2f\n"
-                + "\tCalificacion 1: %.2f\n"
-                + "\tCalificacion 1: %.2f\n"
-                + "\tPromedio= %.2f\n",
+                + "%s %s\n"
+                + "   Calificaciones:\n"
+                + "   %.2f\n"
+                + "   %.2f\n"
+                + "   %.2f\n"
+                + "   Promedio= %.2f\n",
                 nombre,
                 apellido,
                 calificacion1,
