@@ -1,5 +1,9 @@
 # taller14
 
+#Integrantes:
+Denis Ruiz
+Oliver Saraguro
+
 ## Problema 01
 * Generar un programa que permita ingresar por teclado información que corresponde a
 sueldos de trabajadores. Por cada trabajador ingresar: cédula, nombres, correo, sueldo, mes del sueldo.
