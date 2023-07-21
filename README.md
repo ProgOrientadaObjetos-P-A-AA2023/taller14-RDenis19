@@ -1,8 +1,10 @@
 # taller14
 
 #Integrantes:
-Denis Ruiz
-Oliver Saraguro
+
+-Denis Ruiz
+
+-Oliver Saraguro
 
 ## Problema 01
 * Generar un programa que permita ingresar por teclado información que corresponde a
